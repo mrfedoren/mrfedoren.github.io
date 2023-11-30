@@ -44,14 +44,14 @@
 
 /* Hover effect for text links */
 .header-top .icon-group .text-link:hover {
-  color: #cf711f; /* Adjust text color on hover */
+  color: #463007; /* Adjust text color on hover */
 }
 
 .header-top::after {
   content: "";
   display: block;
   height: 2px; /* Adjust the height of the divider */
-  background-color: #cf711f; /* Choose your desired color */
+  background-color: #463007; /* Choose your desired color */
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -59,10 +59,10 @@
 }
 
 .icon-group .icon-element .icon-link i {
-  color: #e67e22;
+  color: #715a2a;
   height: 4.6rem;
   width: 4.6rem;
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   padding: 1.6rem;
   border-radius: 50%;
 }
@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: #edeae6;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -116,7 +116,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #463007;
 }
 
 .main-nav-link.nav-cta:link,
@@ -124,12 +124,12 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: #715a2a;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: #463007;
 }
 
 /* MOBILE */
@@ -174,7 +174,7 @@
 /**************************/
 
 .section-hero {
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -214,7 +214,7 @@
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
+  border: 3px solid #edeae6;
 }
 
 .delivered-imgs img:last-child {
@@ -227,7 +227,7 @@
 }
 
 .delivered-text span {
-  color: #cf711f;
+  color: #463007;
   font-weight: 700;
 }
 
@@ -333,7 +333,7 @@
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
-  color: #e67e22;
+  color: #715a2a;
 }
 
 .meal-img {
@@ -350,7 +350,7 @@
 /**************************/
 
 .section-testimonials {
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -421,12 +421,12 @@
 
 .pricing-plan--starter {
   justify-self: end;
-  border: 2px solid #fdf2e9;
+  border: 2px solid #edeae6;
   padding: 4.6rem;
 }
 
 .pricing-plan--complete {
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
@@ -453,7 +453,7 @@
 }
 
 .plan-name {
-  color: #cf711f;
+  color: #463007;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
@@ -496,7 +496,7 @@
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 .angebot:hover {
@@ -506,7 +506,7 @@
 
 .angebot i {
   font-size: 3.2rem; 
-  color: #e67e22;
+  color: #715a2a;
   height: 3.2rem;
   margin-bottom: 3.2rem;
 }
@@ -560,17 +560,17 @@
   display: grid;
   /* 2/3 = 66.6% + 1/3 = 33.3% */
   grid-template-columns: 2fr 1fr;
-  /* background-color: #e67e22; */
+  /* background-color: #715a2a; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  background-image: linear-gradient(to right bottom, #90836a, #382606);
   overflow: hidden;
 }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  color: #312205;
 }
 
 .cta .heading-secondary {
@@ -588,8 +588,8 @@
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
+      rgba(126, 110, 81, 0.35),
+      rgba(70, 48, 7, 0.35)
     ),
     url("../img/anfrage.png");
   background-size: cover;
@@ -618,7 +618,7 @@
   font-family: inherit;
   color: inherit;
   border: none;
-  background-color: #fdf2e9;
+  background-color: #edeae6;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
