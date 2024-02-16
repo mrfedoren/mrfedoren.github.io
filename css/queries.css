@@ -33,7 +33,7 @@
     row-gap: 6.4rem;
   }
 
-  .heading-secondary {
+  .heading-secondary .heading-how{
     font-size: 3.6rem;
   }
 
@@ -68,6 +68,10 @@
     font-size: 50%;
   }
 
+  .header-top {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -83,13 +87,21 @@
     width: 60%;
   }
 
-  .delivered-meals {
+  .our-customers {
     justify-content: center;
     margin-top: 3.2rem;
   }
 
   .logos img {
     height: 2.4rem;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .logo-text {
+    font-size: 2.4rem;
   }
 
   .step-number {
@@ -206,8 +218,12 @@
     width: 100%;
   }
 
+  .footer {
+    padding: 12.8rem 0;
+  }
+
   .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .logo-col,
@@ -263,9 +279,30 @@
     grid-row: 1;
   }
 
+  .step-img-box:nth-child(4) {
+    grid-row: 3;
+  }
+
   .step-img-box:nth-child(6) {
     grid-row: 5;
   }
+
+  .step-img-box:nth-child(8) {
+    grid-row: 7;
+  }
+
+  .step-img-box:nth-child(10) {
+    grid-row: 9;
+  }
+
+  .step-img-box:nth-child(12) {
+    grid-row: 11;
+  }
+  .step-img-box:nth-child(14) {
+    grid-row: 13;
+  }
+
+
 
   .step-img-box {
     transform: translateY(2.4rem);

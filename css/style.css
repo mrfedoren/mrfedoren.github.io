@@ -18,6 +18,11 @@
   font-size: 1.8rem;
 }
 
+.icon-footer {
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
 /* Style the icon elements */
 .icon-element {
   display: flex;
@@ -26,7 +31,8 @@
 }
 
 /* Style the icon links */
-.header-top .icon-group .icon-link {
+.header-top .icon-group .icon-link,
+.header-top .icon-footer .icon-link {
   text-decoration: none;
   color: #333;
   margin-right: 1.2rem;
@@ -34,16 +40,17 @@
 }
 
 /* Style the text links */
-.header-top .icon-group .text-link {
+.header-top .icon-group .text-link,
+.icon-footer .text-link {
   text-decoration: none;
   color: #333;
-
   font-weight: 600;/* Adjust text size */
   transition: color 0.3s; /* Add transition effect */
 }
 
 /* Hover effect for text links */
-.header-top .icon-group .text-link:hover {
+.header-top .icon-group .text-link:hover,
+.header-top .icon-footer .text-link:hover {
   color: #463007; /* Adjust text color on hover */
 }
 
@@ -59,13 +66,28 @@
 }
 
 .icon-group .icon-element .icon-link i {
-  color: #715a2a;
+  color: #584621;
   height: 4.6rem;
   width: 4.6rem;
   background-color: #edeae6;
-  padding: 1.6rem;
+  padding: 1.5rem 1.5rem;;
   border-radius: 50%;
+  border:1px solid #312205
 }
+
+
+
+.icon-footer .icon-element .icon-link i {
+  color: #584621;
+  height: 4.6rem;
+  width: 4.6rem;
+  background-color: #edeae6;
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  border:1px solid #312205;
+  margin: 0 1rem 1rem 0;
+}
+
 
 .header {
   display: flex;
@@ -90,7 +112,7 @@
   font-weight: 600;
   font-size: 4rem;
   top: 50%;
-  left: 12rem;
+  left: 10rem;
 }
 
 /**************************/
@@ -124,7 +146,7 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #715a2a;
+  background-color: #584621;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -198,18 +220,18 @@
   width: 100%;
 }
 
-.delivered-meals {
+.our-customers {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
 }
 
-.delivered-imgs {
+.customer-imgs {
   display: flex;
 }
 
-.delivered-imgs img {
+.customer-imgs img {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
@@ -217,16 +239,16 @@
   border: 3px solid #edeae6;
 }
 
-.delivered-imgs img:last-child {
+.customer-imgs img:last-child {
   margin: 0;
 }
 
-.delivered-text {
+.customers-text {
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.delivered-text span {
+.customers-text span {
   color: #463007;
   font-weight: 700;
 }
@@ -237,6 +259,18 @@
 
 .section-servieces {
   padding: 9.6rem 0;
+}
+
+
+.section-how {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
 }
 
 .step-description {
@@ -259,35 +293,6 @@
   /* z-index: 10; */
 }
 
-/**************************/
-/* MEALS SECTION */
-/**************************/
-
-.section-meals {
-  padding: 9.6rem 0;
-}
-
-.meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
-  overflow: hidden;
-  transition: all 0.4s;
-}
-
-.meal:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-}
-
-.meal-content {
-  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-}
-
-.meal-tags {
-  margin-bottom: 1.2rem;
-  display: flex;
-  gap: 0.4rem;
-}
 
 .tag {
   display: inline-block;
@@ -299,48 +304,8 @@
   font-weight: 600;
 }
 
-.tag--vegetarian {
-  background-color: #51cf66;
-}
-.tag--vegan {
-  background-color: #94d82d;
-}
-.tag--paleo {
-  background-color: #ffd43b;
-}
 
-.meal-title {
-  font-size: 2.4rem;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 3.2rem;
-}
-
-.meal-attributes {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.meal-attribute {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.meal-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-  color: #715a2a;
-}
-
-.meal-img {
-  width: 100%;
-}
-
-.all-recipes {
+.learn-more {
   text-align: center;
   font-size: 1.8rem;
 }
@@ -375,7 +340,7 @@
 
 .testimonial-text {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.4;
   margin-bottom: 1.6rem;
 }
 
@@ -404,10 +369,6 @@
 .gallery-item img:hover {
   transform: scale(1.1);
 }
-
-/**************************/
-/* MEALS SECTION */
-/**************************/
 
 .section-pricing {
   padding: 9.6rem 0;
@@ -506,7 +467,7 @@
 
 .angebot i {
   font-size: 3.2rem; 
-  color: #715a2a;
+  color: #584621;
   height: 3.2rem;
   margin-bottom: 3.2rem;
 }
@@ -537,6 +498,15 @@
 .angebot-container{
   width: 33.6rem; 
 }
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 .angebot-information {
   width: 75rem; /* .angebot-information takes up 60% of the available space */
@@ -637,7 +607,7 @@
 /**************************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 9.6rem;
   border-top: 1px solid #eee;
 }
 
@@ -651,7 +621,7 @@
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
 }
 
 .logo-col {
@@ -685,12 +655,12 @@
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin-bottom: 2.4rem;
 }
 
 .contacts {
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 
